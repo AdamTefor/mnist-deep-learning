@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>MNIST - Démo HTML/JS</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 30px auto; padding: 0 16px; }
+    .row { display: flex; gap: 24px; flex-wrap: wrap; align-items: flex-start; }
+    canvas { border: 2px solid #111; border-radius: 10px; touch-action: none; background: white; }
+    button { padding: 10px 14px; cursor: pointer; }
+    .card { border: 1px solid #ddd; border-radius: 10px; padding: 14px; min-width: 260px; }
+    .big { font-size: 22px; font-weight: 700; }
+    .muted { color: #666; }
+  </style>
+</head>
+<body>
+  <h2>Reconnaissance de chiffres (MNIST) — HTML + JavaScript</h2>
+  <p class="muted">Dessine un chiffre (0-9) puis clique sur “Prédire”.</p>
+
+  <div class="row">
+    <div>
+      <canvas id="pad" width="280" height="280"></canvas>
+      <div style="margin-top:12px; display:flex; gap:10px;">
+        <button id="btnPredict">Prédire</button>
+        <button id="btnClear">Effacer</button>
+      </div>
+      <p class="muted">Astuce: écris grand et centré.</p>
+    </div>
+
+    <div class="card">
+      <div class="big">Résultat</div>
+      <p>Chiffre prédit : <span id="pred" class="big">-</span></p>
+      <p>Confiance : <span id="conf">-</span></p>
+      <div>
+        <div class="big" style="margin-top:10px;">Top 3</div>
+        <ul id="top3"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

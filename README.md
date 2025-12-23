@@ -1,3 +1,4 @@
+<img width="1021" height="646" alt="image" src="https://github.com/user-attachments/assets/04292e1d-57df-4431-91e9-7a17d0c6d2c6" />
 # MNIST Deep Learning — Handwritten Digit Recognition (CNN)
 
 Projet de Deep Learning qui reconnaît les chiffres manuscrits (0–9) à partir d’images, entraîné sur le dataset MNIST avec un réseau CNN (TensorFlow/Keras).  
